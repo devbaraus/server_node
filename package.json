@@ -1,0 +1,22 @@
+{
+  "name": "server_node",
+  "version": "0.0.1",
+  "description": "Servidor em nodejs",
+  "main": "./src/server.js",
+  "author": "Bruno de Araujo Alves <devbaraus>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --watch ./src/**/* ./src/server",
+    "start": "node ./src/server"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
