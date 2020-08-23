@@ -24,7 +24,7 @@ class FactsController {
     }
   }
   async show(request, response) {
-    // pega o parâmetro ID requisição
+    // pega o ID da rota
     const { id } = request.params
     try {
       // Lê de forma síncrona o arquivo json, como string
@@ -102,7 +102,7 @@ class FactsController {
     }
   }
   async update(request, response) {
-    // pega o parâmetro de requisição ID
+    // pega o ID da rota
     const { id } = request.params
     // pega o campo text do corpo da requisição
     const { text } = request.body
@@ -164,7 +164,7 @@ class FactsController {
     }
   }
   async delete(request, response) {
-    // pega o parâmetro de requisição ID
+    // pega o ID da rota
     const { id } = request.params
     try {
       // Lê de forma síncrona o arquivo json como string
